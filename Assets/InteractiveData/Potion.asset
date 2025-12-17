@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   startsOn: 1
-  inventoryName: Potion
+  inventoryName: potion
   inventoryIcon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   requirements:
   - {fileID: 11400000, guid: 8243a383075487644a96bf3254d22fc2, type: 2}
   - {fileID: 11400000, guid: 94046498b3e418043a81e7641112acae, type: 2}
   - {fileID: 11400000, guid: 66781abcfc1c53d4b814304d6ac5e236, type: 2}
   requirementsMessage: 
-  interactionMessages:
-  - Pick potion
+  interactionMessages: []
+  MaxUses: 3

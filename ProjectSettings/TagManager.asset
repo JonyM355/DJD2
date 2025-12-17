@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - door
+  - HiddenTexture
+  - Code
   layers:
   - Default
   - TransparentFX

@@ -51,11 +51,15 @@ public class PlayerInventory : MonoBehaviour
 
     private void SelectInventorySlot(int index)
     {
+        Debug.Log(_selectedSlotIndex);
+        Debug.Log(index);
         _selectedSlotIndex = index;
 
         _uiManager.SelectInventorySlot(index);
 
         _playerInteraction.RefreshCurrentInteractive();
+
+        Debug.Log("ASD");
     }
 
     public string GetSelectedInteractionMessage()

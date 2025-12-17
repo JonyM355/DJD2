@@ -18,6 +18,13 @@ public class Interactive : MonoBehaviour
     public string           inventoryName   => _interactiveData.inventoryName;
     public Sprite           inventoryIcon   => _interactiveData.inventoryIcon;
 
+    public Transform hand;
+    private int MaxUses;
+
+    private int Uses;
+
+
+ 
     void Awake()
     {
         _interactionManager = InteractionManager.instance;
@@ -28,7 +35,8 @@ public class Interactive : MonoBehaviour
         _requirementsMet    = _interactiveData.requirements.Length == 0;
         _interactionCount   = 0;
         isOn                = _interactiveData.startsOn;
-
+        MaxUses = _interactiveData.MaxUses;
+        Uses = 0;
         _interactionManager.RegisterInteractive(this);
     }
 
@@ -96,7 +104,9 @@ public class Interactive : MonoBehaviour
     private void PickUpInteractive()
     {
         _playerInventory.Add(this);
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
+        gameObject.transform.SetParent(hand);
+        gameObject.transform.localPosition = Vector3.zero;
     }
 
     private void DoDirectInteraction()
@@ -156,7 +166,10 @@ public class Interactive : MonoBehaviour
     {
         Interactive requirement = _playerInventory.GetSelected();
 
-        _playerInventory.Remove(requirement);
+
+        requirement.Uses++;
+        if (requirement.Uses >= requirement.MaxUses)
+            _playerInventory.Remove(requirement);
 
         ++requirement._interactionCount;
 

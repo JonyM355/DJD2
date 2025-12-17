@@ -19,4 +19,5 @@ MonoBehaviour:
   requirements: []
   requirementsMessage: 
   interactionMessages:
-  - Push (C2)
+  - Push
+  uses: 1

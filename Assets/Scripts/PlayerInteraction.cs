@@ -52,8 +52,8 @@ public class PlayerInteraction : MonoBehaviour
 
     private void SetCurrentInteractive(Interactive interactive)
     {
-        _currentInteractive         = interactive;
-        _refreshCurrentInteractive  = false;
+        _currentInteractive = interactive;
+        _refreshCurrentInteractive = false;
 
         string interactionMessage = interactive.GetInteractionMessage();
 
@@ -67,6 +67,7 @@ public class PlayerInteraction : MonoBehaviour
             _uiManager.ShowDefaultCrosshair();
             _uiManager.HideInteractionPanel();
         }
+        
     }
 
     private void CheckForPlayerInteraction()
@@ -81,5 +82,6 @@ public class PlayerInteraction : MonoBehaviour
     public void RefreshCurrentInteractive()
     {
         _refreshCurrentInteractive = true;
+        
     }
 }
