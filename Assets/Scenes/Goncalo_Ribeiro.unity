@@ -342,6 +342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: 9bcba66cce7a05c4b812bc287aedbe92, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!1001 &18177950
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1042,6 +1043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: 2f8c8adb7ed19304ebf7e8fc3e865691, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!65 &27712225
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1077,6 +1079,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: dc1ed271a1d5e4e40bb8f56ef5d895ee, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!65 &27712227
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1112,6 +1115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: 9b282b77dbe3073408a849f5a029fcce, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!1001 &42418971
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4691,6 +4695,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &60452912
 Animator:
   serializedVersion: 7
@@ -4748,6 +4753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &60452915
 Animator:
   serializedVersion: 7
@@ -4805,6 +4811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &62275749
 Animator:
   serializedVersion: 7
@@ -4973,6 +4980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &76916328
 Animator:
   serializedVersion: 7
@@ -5030,6 +5038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &78296719
 Animator:
   serializedVersion: 7
@@ -5087,6 +5096,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &82855287
 Animator:
   serializedVersion: 7
@@ -5255,6 +5265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &83823854
 Animator:
   serializedVersion: 7
@@ -5895,6 +5906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: c30d0dd67e03f8343a5bdb9ff95b94dc, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!23 &92869358
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6786,6 +6798,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &159008523
 Animator:
   serializedVersion: 7
@@ -7281,6 +7294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &188909274
 Animator:
   serializedVersion: 7
@@ -7338,6 +7352,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &193474790
 Animator:
   serializedVersion: 7
@@ -7395,6 +7410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &196581063
 Animator:
   serializedVersion: 7
@@ -7831,6 +7847,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &228834398
 Animator:
   serializedVersion: 7
@@ -7888,6 +7905,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &229129752
 Animator:
   serializedVersion: 7
@@ -8053,6 +8071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &239467152
 Animator:
   serializedVersion: 7
@@ -8110,6 +8129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &240044327
 Animator:
   serializedVersion: 7
@@ -8708,6 +8728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &298174442
 Animator:
   serializedVersion: 7
@@ -8765,6 +8786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &304158320
 Animator:
   serializedVersion: 7
@@ -8933,6 +8955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &313573812
 Animator:
   serializedVersion: 7
@@ -9060,6 +9083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &327738473
 Animator:
   serializedVersion: 7
@@ -9117,6 +9141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &328020525
 Animator:
   serializedVersion: 7
@@ -9377,6 +9402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &334674469
 Animator:
   serializedVersion: 7
@@ -9434,6 +9460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &350372958
 Animator:
   serializedVersion: 7
@@ -9491,6 +9518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &357572319
 Animator:
   serializedVersion: 7
@@ -9691,6 +9719,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &384074756
 Animator:
   serializedVersion: 7
@@ -9748,6 +9777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &385883523
 Animator:
   serializedVersion: 7
@@ -10410,6 +10440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: 7f4aaa0cc4d320d46a882818324c5fe4, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!65 &400010263
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10556,6 +10587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: 8243a383075487644a96bf3254d22fc2, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &406271417
 Animator:
   serializedVersion: 7
@@ -11215,6 +11247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &455005986
 Animator:
   serializedVersion: 7
@@ -11272,6 +11305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &456730916
 Animator:
   serializedVersion: 7
@@ -11568,6 +11602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &484913090
 Animator:
   serializedVersion: 7
@@ -13164,6 +13199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &541460018
 Animator:
   serializedVersion: 7
@@ -13342,6 +13378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &545195651
 Animator:
   serializedVersion: 7
@@ -13399,6 +13436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &548847349
 Animator:
   serializedVersion: 7
@@ -14028,6 +14066,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &574140234
 Animator:
   serializedVersion: 7
@@ -14895,6 +14934,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &627039525
 Animator:
   serializedVersion: 7
@@ -15096,6 +15136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &634011190
 Animator:
   serializedVersion: 7
@@ -15264,6 +15305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &646816523
 Animator:
   serializedVersion: 7
@@ -15432,6 +15474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &665736182
 Animator:
   serializedVersion: 7
@@ -15971,6 +16014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: 57e0c25f30e0af544942cc2d0220c5cb, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!114 &685452341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15985,6 +16029,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &685452342
 Animator:
   serializedVersion: 7
@@ -16194,6 +16239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &695683506
 Animator:
   serializedVersion: 7
@@ -16490,6 +16536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &713076993
 Animator:
   serializedVersion: 7
@@ -16724,6 +16771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &742933188
 Animator:
   serializedVersion: 7
@@ -17148,6 +17196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &768183935
 Animator:
   serializedVersion: 7
@@ -17427,6 +17476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &782832579
 Animator:
   serializedVersion: 7
@@ -17484,6 +17534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &784017397
 Animator:
   serializedVersion: 7
@@ -17572,6 +17623,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &788409825
 Animator:
   serializedVersion: 7
@@ -18512,13 +18564,100 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e37eb2f80be3373439d3d07b60043b1d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1261078186}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -8068073526183931155, guid: e37eb2f80be3373439d3d07b60043b1d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 843380002}
+    - targetCorrespondingSourceObject: {fileID: -7731557126678868651, guid: e37eb2f80be3373439d3d07b60043b1d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 843380001}
+    - targetCorrespondingSourceObject: {fileID: 7972188284540082605, guid: e37eb2f80be3373439d3d07b60043b1d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 843380000}
   m_SourcePrefab: {fileID: 100100000, guid: e37eb2f80be3373439d3d07b60043b1d, type: 3}
 --- !u!4 &843379996 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e37eb2f80be3373439d3d07b60043b1d, type: 3}
   m_PrefabInstance: {fileID: 843379995}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &843379997 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7972188284540082605, guid: e37eb2f80be3373439d3d07b60043b1d, type: 3}
+  m_PrefabInstance: {fileID: 843379995}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &843379998 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7731557126678868651, guid: e37eb2f80be3373439d3d07b60043b1d, type: 3}
+  m_PrefabInstance: {fileID: 843379995}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &843379999 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8068073526183931155, guid: e37eb2f80be3373439d3d07b60043b1d, type: 3}
+  m_PrefabInstance: {fileID: 843379995}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &843380000
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843379997}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0071265493, y: 0.005162178, z: 0.004988069}
+  m_Center: {x: -0.002732426, y: 0.00008108908, z: -0.000000018626448}
+--- !u!65 &843380001
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843379998}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0036147826, y: 0.0038778076, z: 0.0010379988}
+  m_Center: {x: -0.0017326354, y: 0.00044999944, z: -0.000078654775}
+--- !u!65 &843380002
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843379999}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0049536605, y: 0.00047372226, z: 0.004629788}
+  m_Center: {x: -0.0018909115, y: 0.0028369892, z: 0.00000042864113}
 --- !u!1001 &845877597
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18817,6 +18956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &865059541
 Animator:
   serializedVersion: 7
@@ -19085,6 +19225,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &877294623
 Animator:
   serializedVersion: 7
@@ -19250,6 +19391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &888213447
 Animator:
   serializedVersion: 7
@@ -19307,6 +19449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &895752328
 Animator:
   serializedVersion: 7
@@ -19364,6 +19507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &895967078
 Animator:
   serializedVersion: 7
@@ -19956,6 +20100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &963058036
 Animator:
   serializedVersion: 7
@@ -20245,6 +20390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &973406158
 Animator:
   serializedVersion: 7
@@ -21028,6 +21174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1024713544
 Animator:
   serializedVersion: 7
@@ -21085,6 +21232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1029679594
 Animator:
   serializedVersion: 7
@@ -21253,6 +21401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1034945207
 Animator:
   serializedVersion: 7
@@ -21607,6 +21756,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1054412228
 Animator:
   serializedVersion: 7
@@ -21738,6 +21888,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1069701769
 Animator:
   serializedVersion: 7
@@ -21906,6 +22057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1076045164
 Animator:
   serializedVersion: 7
@@ -21963,6 +22115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1085440988
 Animator:
   serializedVersion: 7
@@ -22197,6 +22350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1094049790
 Animator:
   serializedVersion: 7
@@ -22362,6 +22516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1104926738
 Animator:
   serializedVersion: 7
@@ -23812,6 +23967,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1170075417
 Animator:
   serializedVersion: 7
@@ -24043,6 +24199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1182650988
 Animator:
   serializedVersion: 7
@@ -24319,6 +24476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1199470913
 Animator:
   serializedVersion: 7
@@ -24595,6 +24753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1208781748
 Animator:
   serializedVersion: 7
@@ -24652,6 +24811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1213685413
 Animator:
   serializedVersion: 7
@@ -24912,6 +25072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1218345652
 Animator:
   serializedVersion: 7
@@ -25090,6 +25251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1224797487
 Animator:
   serializedVersion: 7
@@ -25745,6 +25907,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1255831168
 Animator:
   serializedVersion: 7
@@ -26730,13 +26893,42 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4e72b3d055d40384c8d1bfdb9e8d4edf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1296077245}
   m_SourcePrefab: {fileID: 100100000, guid: 4e72b3d055d40384c8d1bfdb9e8d4edf, type: 3}
 --- !u!4 &1296077243 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4e72b3d055d40384c8d1bfdb9e8d4edf, type: 3}
   m_PrefabInstance: {fileID: 1296077242}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1296077244 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4e72b3d055d40384c8d1bfdb9e8d4edf, type: 3}
+  m_PrefabInstance: {fileID: 1296077242}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1296077245
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296077244}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0033763545, y: 0.003376354, z: 0.0197706}
+  m_Center: {x: -0.000000012814998, y: -0.0000000064074994, z: 0.009885325}
 --- !u!1001 &1297928020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26953,6 +27145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1299933128
 Animator:
   serializedVersion: 7
@@ -27010,6 +27203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1302938904
 Animator:
   serializedVersion: 7
@@ -27067,6 +27261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1306041101
 Animator:
   serializedVersion: 7
@@ -27298,6 +27493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: 66781abcfc1c53d4b814304d6ac5e236, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1319070176
 Animator:
   serializedVersion: 7
@@ -27668,6 +27864,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1330723653
 Animator:
   serializedVersion: 7
@@ -28149,6 +28346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1356438556
 Animator:
   serializedVersion: 7
@@ -28206,6 +28404,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1368654273
 Animator:
   serializedVersion: 7
@@ -28362,6 +28561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1377454343
 Animator:
   serializedVersion: 7
@@ -28586,6 +28786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1387253336
 Animator:
   serializedVersion: 7
@@ -28721,6 +28922,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1417218521
 Animator:
   serializedVersion: 7
@@ -29211,6 +29413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1448973692
 Animator:
   serializedVersion: 7
@@ -29268,6 +29471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1453740585
 Animator:
   serializedVersion: 7
@@ -29325,6 +29529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1460278098
 Animator:
   serializedVersion: 7
@@ -29686,6 +29891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1489986724
 Animator:
   serializedVersion: 7
@@ -30330,6 +30536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1545070227
 Animator:
   serializedVersion: 7
@@ -30538,6 +30745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1559808479
 Animator:
   serializedVersion: 7
@@ -31039,6 +31247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1572825865
 Animator:
   serializedVersion: 7
@@ -31203,6 +31412,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1575781385
 Animator:
   serializedVersion: 7
@@ -31466,6 +31676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1585729517
 Animator:
   serializedVersion: 7
@@ -32015,6 +32226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1608661159
 Animator:
   serializedVersion: 7
@@ -32072,6 +32284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1617136531
 Animator:
   serializedVersion: 7
@@ -32366,6 +32579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1628980742
 Animator:
   serializedVersion: 7
@@ -32534,6 +32748,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1645829381
 Animator:
   serializedVersion: 7
@@ -32591,6 +32806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1646354730
 Animator:
   serializedVersion: 7
@@ -32759,6 +32975,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1651400531
 Animator:
   serializedVersion: 7
@@ -33147,6 +33364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1695537955
 Animator:
   serializedVersion: 7
@@ -33315,6 +33533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1725783770
 Animator:
   serializedVersion: 7
@@ -33557,6 +33776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1744437590
 Animator:
   serializedVersion: 7
@@ -33709,6 +33929,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1749506646
 Animator:
   serializedVersion: 7
@@ -34266,6 +34487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: 065f7b1180825b34aaa2e30b185803d3, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!114 &1769675416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34280,6 +34502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1769675417
 Animator:
   serializedVersion: 7
@@ -34337,6 +34560,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1777984670
 Animator:
   serializedVersion: 7
@@ -35180,6 +35404,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1821268682
 Animator:
   serializedVersion: 7
@@ -35617,6 +35842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1847719447
 Animator:
   serializedVersion: 7
@@ -35674,6 +35900,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1852154418
 Animator:
   serializedVersion: 7
@@ -35969,6 +36196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1872418603
 Animator:
   serializedVersion: 7
@@ -36380,6 +36608,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1888034388
 Animator:
   serializedVersion: 7
@@ -36503,6 +36732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1889905357
 Animator:
   serializedVersion: 7
@@ -37695,6 +37925,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &1970265636
 Animator:
   serializedVersion: 7
@@ -38210,6 +38441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &2000846740
 Animator:
   serializedVersion: 7
@@ -38383,6 +38615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: eef71141694784d40a276de532aeb74c, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!65 &2012242856
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38617,6 +38850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: 94046498b3e418043a81e7641112acae, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &2030978903
 Animator:
   serializedVersion: 7
@@ -38674,6 +38908,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &2035943603
 Animator:
   serializedVersion: 7
@@ -38731,6 +38966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &2049717394
 Animator:
   serializedVersion: 7
@@ -38899,6 +39135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &2051264317
 Animator:
   serializedVersion: 7
@@ -39111,6 +39348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &2081496437
 Animator:
   serializedVersion: 7
@@ -39279,6 +39517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &2086443151
 Animator:
   serializedVersion: 7
@@ -39336,6 +39575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &2095728422
 Animator:
   serializedVersion: 7
@@ -39459,6 +39699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &2104762222
 Animator:
   serializedVersion: 7
@@ -39801,6 +40042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &2138976178
 Animator:
   serializedVersion: 7
@@ -39858,6 +40100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactiveData: {fileID: 11400000, guid: a305ee1085da21240ada53815595ce1f, type: 2}
   isOn: 0
+  hand: {fileID: 0}
 --- !u!95 &2139668213
 Animator:
   serializedVersion: 7
