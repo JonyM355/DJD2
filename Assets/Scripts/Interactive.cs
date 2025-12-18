@@ -4,7 +4,7 @@ using UnityEngine;
 public class Interactive : MonoBehaviour
 {
     [SerializeField] private InteractiveData _interactiveData;
-
+    [SerializeField] private ExamineObjects _examinationObjects;
     private InteractionManager  _interactionManager;
     private PlayerInventory     _playerInventory;
     private List<Interactive>   _requirements;
@@ -99,14 +99,19 @@ public class Interactive : MonoBehaviour
             DoDirectInteraction();
         else if (IsType(InteractiveData.Type.Indirect))
             PlayAnimation(_interactionManager.interactAnimationName);
+        else if (IsType(InteractiveData.Type.Examine))
+            _examinationObjects.ExamineInteractive();
     }
 
     private void PickUpInteractive()
     {
         _playerInventory.Add(this);
         //gameObject.SetActive(false);
+
         gameObject.transform.SetParent(hand);
         gameObject.transform.localPosition = Vector3.zero;
+        gameObject.transform.localRotation = Quaternion.identity;
+       
     }
 
     private void DoDirectInteraction()

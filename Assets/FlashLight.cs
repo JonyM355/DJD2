@@ -12,13 +12,6 @@ public class FlashLight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RaycastHit hit;
-        if (Physics.Raycast(gameObject.transform.position, gameObject.transform.forward, out hit, 3f))
-        {
-            if (hit.collider.CompareTag("HiddenTexture"))
-            {
-                hit.collider.GetComponent<Renderer>().enabled = true;
-            }
-        }
+        
     }
 }
