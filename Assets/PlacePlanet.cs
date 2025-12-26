@@ -5,7 +5,9 @@ public class PlacePlanet : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField] SolarSystemManager SolarSystemManager;
+    [SerializeField] private Animator animator;
     public Transform hand;
+    public bool isOn = false;
     private int Location;
     private InteractionManager  _interactionManager;
     private PlayerInventory     _playerInventory;
@@ -33,14 +35,16 @@ public class PlacePlanet : MonoBehaviour
 
             if (child.gameObject.activeSelf)   // ou activeInHierarchy
             {
+                Debug.Log(child.gameObject);
                 activeChild = child;
                 break;
             }
         }
-
+        Debug.Log("teste1");
         Interactive requirement = _playerInventory.GetSelected();
         if (activeChild != null)
-        {
+        {  
+            Debug.Log("teste");
             activeChild.position = transform.position;
             //child.rotation = transform.rotation;
             Debug.Log(int.Parse(activeChild.name));
@@ -49,7 +53,8 @@ public class PlacePlanet : MonoBehaviour
             SolarSystemManager.ChangeSlot(Location);
             SolarSystemManager.ChangeAnswer(Location, int.Parse(activeChild.name));
             SolarSystemManager.CheckResult();
-            
+            isOn= true;
+            animator.SetBool("isOn", true);
         }
         else
         {

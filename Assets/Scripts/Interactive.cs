@@ -105,14 +105,48 @@ public class Interactive : MonoBehaviour
 
     private void PickUpInteractive()
     {
+
         _playerInventory.Add(this);
         //gameObject.SetActive(false);
-
+        TrySetParentIsOn();
+        _playerInventory.HideHandAllItem(); 
         gameObject.transform.SetParent(hand);
         gameObject.transform.localPosition = Vector3.zero;
         gameObject.transform.localRotation = Quaternion.identity;
         
        
+    }
+    public void TrySetParentIsOn()
+    {
+        
+        Animator anim = GetComponentInParent<Animator>();
+
+        if (anim == null)
+        {
+            Debug.Log("Nenhum Animator encontrado no parent.");
+            return;
+        }
+
+        // verifica se existe o parâmetro bool "isOn"
+        bool hasIsOn = false;
+
+        foreach (var p in anim.parameters)
+        {
+            if (p.type == AnimatorControllerParameterType.Bool && p.name == "isOn")
+            {
+                hasIsOn = true;
+                break;
+            }
+        }
+
+        if (!hasIsOn)
+        {
+            Debug.Log("O Animator do parent não tem o parâmetro bool 'isOn'.");
+            return;
+        }
+
+        // define o bool
+        anim.SetBool("isOn", false);
     }
 
     private void DoDirectInteraction()

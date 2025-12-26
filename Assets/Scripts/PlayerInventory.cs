@@ -80,6 +80,11 @@ public class PlayerInventory : MonoBehaviour
         if (child != null)
             child.gameObject.SetActive(true);
     }
+    public void HideHandAllItem()
+    {
+        for (int i = 0; i < hand.childCount; i++)
+            hand.GetChild(i).gameObject.SetActive(false);
+    }
 
     public string GetSelectedInteractionMessage()
     {
