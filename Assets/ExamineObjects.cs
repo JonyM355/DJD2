@@ -8,7 +8,7 @@ public class ExamineObjects : MonoBehaviour
     public bool IsExamining = false;
     public PlayerMovement playerMovement;
     private Vector3 LastMousePosition;
-
+    private bool lastState;
     private Transform ExaminedObject;
 
     private Dictionary<Transform, Vector3> OriginalPosition = new Dictionary<Transform, Vector3>();
@@ -22,10 +22,10 @@ public class ExamineObjects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("TEste");
+
         if (IsExamining)
         {
-            Debug.Log("TEste");
+
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
@@ -33,13 +33,12 @@ public class ExamineObjects : MonoBehaviour
             {
                 if (hit.collider == gameObject.GetComponent<Collider>())
                 {
-                    if (IsExamining)
+                    Examine();
+                    if (IsExamining!=lastState)
                     {
                         ExaminedObject = hit.transform;
-                        OriginalPosition[ExaminedObject] = ExaminedObject.position;
-                        OriginalRotation[ExaminedObject] = ExaminedObject.rotation;
 
-                        Examine();
+                        
                         StartExamination();
                     }
                     else
@@ -54,7 +53,7 @@ public class ExamineObjects : MonoBehaviour
             Examine();
             StartExamination();
         }
-        else
+        else if(IsExamining!=lastState)
         {
             NonExamine();
             StopExamination();
@@ -71,6 +70,16 @@ public class ExamineObjects : MonoBehaviour
     }
     void StartExamination()
     {
+        Debug.Log(ExaminedObject.rotation);
+        if (ExaminedObject != null)
+        {
+            if (!OriginalPosition.ContainsKey(ExaminedObject))
+            {
+                OriginalPosition[ExaminedObject] = ExaminedObject.position;
+                OriginalRotation[ExaminedObject] = ExaminedObject.localRotation;
+            }
+        }
+        lastState = IsExamining;
         LastMousePosition = Input.mousePosition;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
@@ -82,6 +91,8 @@ public class ExamineObjects : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         playerMovement.enabled = true;
+        Debug.Log(OriginalPosition[ExaminedObject]);
+        Debug.Log(OriginalRotation[ExaminedObject]);
     }
 
     void Examine()
@@ -92,8 +103,8 @@ public class ExamineObjects : MonoBehaviour
 
             Vector3 DeltaMouse = Input.mousePosition - LastMousePosition;
             float RotationSpeed = 1.0f;
-            ExaminedObject.Rotate(DeltaMouse.x * RotationSpeed * Vector3.up, Space.World);
-            ExaminedObject.Rotate(DeltaMouse.y * RotationSpeed * Vector3.left, Space.World);
+            ExaminedObject.Rotate(DeltaMouse.x * RotationSpeed * Vector3.up, Space.Self);
+            ExaminedObject.Rotate(DeltaMouse.y * RotationSpeed * Vector3.left, Space.Self);
             LastMousePosition = Input.mousePosition;
 
         }

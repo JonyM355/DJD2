@@ -111,6 +111,7 @@ public class Interactive : MonoBehaviour
         gameObject.transform.SetParent(hand);
         gameObject.transform.localPosition = Vector3.zero;
         gameObject.transform.localRotation = Quaternion.identity;
+        
        
     }
 

@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerInventory : MonoBehaviour
 {
     [SerializeField] private UIManager _uiManager;
-
+    [SerializeField] private Transform hand;
     private PlayerInteraction   _playerInteraction;
     private List<Interactive>   _inventory;
     private int                 _selectedSlotIndex;
@@ -51,15 +51,34 @@ public class PlayerInventory : MonoBehaviour
 
     private void SelectInventorySlot(int index)
     {
-        Debug.Log(_selectedSlotIndex);
-        Debug.Log(index);
-        _selectedSlotIndex = index;
 
+        HideHandItem(_selectedSlotIndex);
+        _selectedSlotIndex = index;
+        ShowHandItem(_selectedSlotIndex);
         _uiManager.SelectInventorySlot(index);
 
         _playerInteraction.RefreshCurrentInteractive();
 
-        Debug.Log("ASD");
+    }
+    public void HideHandItem(int slot)
+    {
+        if (slot < 0) return;
+        if (slot >= hand.childCount) return;
+
+        Transform child = hand.GetChild(slot);
+
+        if (child != null)
+            child.gameObject.SetActive(false);
+    }
+    public void ShowHandItem(int slot)
+    {
+        if (slot < 0) return;
+        if (slot >= hand.childCount) return;
+
+        Transform child = hand.GetChild(slot);
+
+        if (child != null)
+            child.gameObject.SetActive(true);
     }
 
     public string GetSelectedInteractionMessage()

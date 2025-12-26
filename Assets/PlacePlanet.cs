@@ -7,7 +7,8 @@ public class PlacePlanet : MonoBehaviour
     [SerializeField] SolarSystemManager SolarSystemManager;
     public Transform hand;
     private int Location;
-
+    private InteractionManager  _interactionManager;
+    private PlayerInventory     _playerInventory;
     void Start()
     {
         if (int.TryParse(gameObject.name, out Location))
@@ -17,20 +18,38 @@ public class PlacePlanet : MonoBehaviour
 
 
     }
+    void Awake()
+    {
+        _interactionManager = FindObjectOfType<InteractionManager>();
+        _playerInventory    = _interactionManager.playerInventory;
+    }
 
     void OnEnable()
     {
-        Transform child = hand.GetChild(0);
-
-        if (child != null)
+        Transform activeChild = null;
+        for (int i = 0; i < hand.childCount; i++)
         {
-            child.position = transform.position;
+            Transform child = hand.GetChild(i);
+
+            if (child.gameObject.activeSelf)   // ou activeInHierarchy
+            {
+                activeChild = child;
+                break;
+            }
+        }
+
+        Interactive requirement = _playerInventory.GetSelected();
+        if (activeChild != null)
+        {
+            activeChild.position = transform.position;
             //child.rotation = transform.rotation;
-            Debug.Log(int.Parse(child.name));
-            child.SetParent(transform);
+            Debug.Log(int.Parse(activeChild.name));
+            activeChild.SetParent(transform);
+            _playerInventory.Remove(requirement);
             SolarSystemManager.ChangeSlot(Location);
-            SolarSystemManager.ChangeAnswer(Location, int.Parse(child.name));
+            SolarSystemManager.ChangeAnswer(Location, int.Parse(activeChild.name));
             SolarSystemManager.CheckResult();
+            
         }
         else
         {
