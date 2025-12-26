@@ -3,7 +3,27 @@ guid: c894697b56578c64cbea1a8c3ffeea82
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FineWood
+    second: {fileID: 2100000, guid: 8522a3ee3ed25ad46abcdb2eb6808ec4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light iron
+    second: {fileID: 2100000, guid: d0501a2ae7d95e44c82098bb98ce7a31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light iron.001
+    second: {fileID: 2100000, guid: d1c66de3bb40eb04e98452bc0273a594, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Procedural pearl black painted plastic
+    second: {fileID: 2100000, guid: f5637993ee480bc4082355ae9c16fcbc, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
