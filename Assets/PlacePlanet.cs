@@ -5,9 +5,12 @@ public class PlacePlanet : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField] SolarSystemManager SolarSystemManager;
+    [SerializeField] private Animator animator;
     public Transform hand;
+    public bool isOn = false;
     private int Location;
-
+    private InteractionManager  _interactionManager;
+    private PlayerInventory     _playerInventory;
     void Start()
     {
         if (int.TryParse(gameObject.name, out Location))
@@ -17,20 +20,41 @@ public class PlacePlanet : MonoBehaviour
 
 
     }
+    void Awake()
+    {
+        _interactionManager = FindObjectOfType<InteractionManager>();
+        _playerInventory    = _interactionManager.playerInventory;
+    }
 
     void OnEnable()
     {
-        Transform child = hand.GetChild(0);
-
-        if (child != null)
+        Transform activeChild = null;
+        for (int i = 0; i < hand.childCount; i++)
         {
-            child.position = transform.position;
+            Transform child = hand.GetChild(i);
+
+            if (child.gameObject.activeSelf)   // ou activeInHierarchy
+            {
+                Debug.Log(child.gameObject);
+                activeChild = child;
+                break;
+            }
+        }
+        Debug.Log("teste1");
+        Interactive requirement = _playerInventory.GetSelected();
+        if (activeChild != null)
+        {  
+            Debug.Log("teste");
+            activeChild.position = transform.position;
             //child.rotation = transform.rotation;
-            Debug.Log(int.Parse(child.name));
-            child.SetParent(transform);
+            Debug.Log(int.Parse(activeChild.name));
+            activeChild.SetParent(transform);
+            _playerInventory.Remove(requirement);
             SolarSystemManager.ChangeSlot(Location);
-            SolarSystemManager.ChangeAnswer(Location, int.Parse(child.name));
+            SolarSystemManager.ChangeAnswer(Location, int.Parse(activeChild.name));
             SolarSystemManager.CheckResult();
+            isOn= true;
+            animator.SetBool("isOn", true);
         }
         else
         {
