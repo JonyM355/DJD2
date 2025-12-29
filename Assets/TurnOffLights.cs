@@ -7,12 +7,12 @@ public class TurnOffLights : MonoBehaviour
     void Awake()
     {
         lights = FindObjectsByType<Light>(FindObjectsSortMode.None);
-
+        TurnOnAllLights();
     }
     public void TurnOffAllLights()
     {
         foreach (Light light in lights)
-            light.enabled = false;
+            light.enabled = !light.enabled;
         if (!obj.activeSelf)
             obj.SetActive(true);
     }
@@ -20,7 +20,7 @@ public class TurnOffLights : MonoBehaviour
     public void TurnOnAllLights()
     {
         foreach (Light light in lights)
-            light.enabled = true;
+            light.enabled = !light.enabled;
         if (obj.activeSelf)
             obj.SetActive(false);
     }

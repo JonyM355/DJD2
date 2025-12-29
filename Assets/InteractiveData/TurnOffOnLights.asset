@@ -10,15 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f0bbe271ecb0874ca2eb5527ff62487, type: 3}
-  m_Name: MathEquation
+  m_Name: TurnOffOnLights
   m_EditorClassIdentifier: 
-  type: 1
+  type: 2
   startsOn: 1
   inventoryName: 
   inventoryIcon: {fileID: 0}
-  requirements:
-  - {fileID: 11400000, guid: eef71141694784d40a276de532aeb74c, type: 2}
-  requirementsMessage: Need Potion
+  requirements: []
+  requirementsMessage: 
   interactionMessages:
-  - Use Potion
-  MaxUses: 1
+  - Push

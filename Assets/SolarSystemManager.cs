@@ -5,11 +5,15 @@ using UnityEngine.UIElements;
 public class SolarSystemManager : MonoBehaviour
 {
     public Animator animator;
-    private static readonly int[] Solution = { 0, 1, 0, 0 };
-    private int[] UserAnswer = { 0, 0, 0, 0 };
+    private static readonly int[] Solution = { 0, 1, 2, 3 };
+    private int[] UserAnswer = { -1, -1, -1, -1 };
 
     private bool[] SlotManager = { false, false, false, false }; //false - Slot Free, True - Slot Occupied
-
+    public GameObject Key;
+    public GameObject Earth;
+    public GameObject Venus;
+    public GameObject Uranus;
+    public GameObject Jupiter;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -41,7 +45,7 @@ public class SolarSystemManager : MonoBehaviour
     {
         Debug.Log("Planet" + planet);
         Debug.Log("Position" + position);
-        if (position < 3 && planet < 4 && position >= 0 && planet > 0)
+        if (position <= 3 && planet < 4 && position >= 0 && planet >= 0)
         {
             UserAnswer[position] = planet;
         }
@@ -52,15 +56,39 @@ public class SolarSystemManager : MonoBehaviour
     }
     public void CheckResult()
     {
-        Debug.Log(UserAnswer);
-        Debug.Log(Solution);
+        Debug.Log(string.Join(", ", UserAnswer));
+        Debug.Log(string.Join(", ", Solution));
         if (UserAnswer.SequenceEqual(Solution))
         {
+            Debug.Log("Answer Right");
             animator.SetTrigger("OpenLamp");
+            Key.SetActive(true);
+            DisableAllInteractive();
         }
         else
         {
-            animator.SetTrigger("CloseLamp");
+            Debug.Log("Answer Wrong");
         }
+    }
+    public void DisableAllInteractive()
+    {
+        DisableInteractiveOn(Earth);
+        DisableInteractiveOn(Venus);
+        DisableInteractiveOn(Uranus);
+        DisableInteractiveOn(Jupiter);
+    }
+
+    void DisableInteractiveOn(GameObject go)
+    {
+        if (go == null) return;
+
+        Interactive interactive = go.GetComponent<Interactive>();
+
+        if (interactive != null)
+            interactive.enabled = false;
+
+        BoxCollider box = go.GetComponent<BoxCollider>();
+        if (box != null)
+            box.enabled = false;
     }
 }

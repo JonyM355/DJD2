@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f0bbe271ecb0874ca2eb5527ff62487, type: 3}
-  m_Name: MathEquationWatch
+  m_Name: Eletric
   m_EditorClassIdentifier: 
-  type: 2
+  type: 1
   startsOn: 1
-  inventoryName: 
-  inventoryIcon: {fileID: 0}
+  inventoryName: Key
+  inventoryIcon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   requirements:
-  - {fileID: 11400000, guid: c30d0dd67e03f8343a5bdb9ff95b94dc, type: 2}
+  - {fileID: 11400000, guid: f4af17d118717ff4586f83b59e178ae0, type: 2}
   requirementsMessage: 
   interactionMessages:
-  - Watch
+  - Open
+  MaxUses: 1

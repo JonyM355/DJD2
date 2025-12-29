@@ -112,7 +112,7 @@ public class Interactive : MonoBehaviour
         _playerInventory.HideHandAllItem(); 
         gameObject.transform.SetParent(hand);
         gameObject.transform.localPosition = Vector3.zero;
-        gameObject.transform.localRotation = Quaternion.identity;
+        gameObject.transform.localRotation = Quaternion.Euler(0f, 180f, 0f);;
         
        
     }

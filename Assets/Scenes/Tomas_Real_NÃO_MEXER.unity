@@ -13332,7 +13332,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SolarSystemManager: {fileID: 1280142005}
+  animator: {fileID: 683312562}
   hand: {fileID: 616566229}
+  isOn: 0
 --- !u!1 &685991506 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7979653285181166135, guid: e47e4ff23c78386409747b176f4c93d2, type: 3}
@@ -25167,7 +25169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cea162fe9f9e50b4098c34cb07505633, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071067
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cea162fe9f9e50b4098c34cb07505633, type: 3}
       propertyPath: m_LocalRotation.x
@@ -25175,15 +25177,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cea162fe9f9e50b4098c34cb07505633, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cea162fe9f9e50b4098c34cb07505633, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cea162fe9f9e50b4098c34cb07505633, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cea162fe9f9e50b4098c34cb07505633, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -44643,6 +44645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _uiManager: {fileID: 7290457029546545546}
+  hand: {fileID: 616566229}
 --- !u!222 &8292231269011021423
 CanvasRenderer:
   m_ObjectHideFlags: 0

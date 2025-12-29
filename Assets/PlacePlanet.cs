@@ -11,15 +11,7 @@ public class PlacePlanet : MonoBehaviour
     private int Location;
     private InteractionManager  _interactionManager;
     private PlayerInventory     _playerInventory;
-    void Start()
-    {
-        if (int.TryParse(gameObject.name, out Location))
-            Debug.Log(Location); // 123
-        else
-            Debug.Log("Invalid number");
 
-
-    }
     void Awake()
     {
         _interactionManager = FindObjectOfType<InteractionManager>();
@@ -28,45 +20,53 @@ public class PlacePlanet : MonoBehaviour
 
     void OnEnable()
     {
-        Transform activeChild = null;
-        for (int i = 0; i < hand.childCount; i++)
+        if(int.TryParse(gameObject.name, out Location))
         {
-            Transform child = hand.GetChild(i);
-
-            if (child.gameObject.activeSelf)   // ou activeInHierarchy
+            Debug.Log(Location); // 123
+            Transform activeChild = null;
+            for (int i = 0; i < hand.childCount; i++)
             {
-                Debug.Log(child.gameObject);
-                activeChild = child;
-                break;
+                Transform child = hand.GetChild(i);
+
+                if (child.gameObject.activeSelf)   // ou activeInHierarchy
+                {
+                    Debug.Log(child.gameObject);
+                    activeChild = child;
+                    break;
+                }
+            }
+            Debug.Log("teste1");
+            Interactive requirement = _playerInventory.GetSelected();
+            if (activeChild != null)
+            {  
+                Debug.Log("teste");
+                activeChild.position = transform.position;
+                //child.rotation = transform.rotation;
+                Debug.Log(int.Parse(activeChild.name));
+                activeChild.SetParent(transform);
+                _playerInventory.Remove(requirement);
+                SolarSystemManager.ChangeSlot(Location);
+                SolarSystemManager.ChangeAnswer(Location, int.Parse(activeChild.name));
+                SolarSystemManager.CheckResult();
+                isOn= true;
+                animator.SetBool("isOn", true);
+            }
+            else
+            {
+                Debug.LogError("Filho não encontrado!");
             }
         }
-        Debug.Log("teste1");
-        Interactive requirement = _playerInventory.GetSelected();
-        if (activeChild != null)
-        {  
-            Debug.Log("teste");
-            activeChild.position = transform.position;
-            //child.rotation = transform.rotation;
-            Debug.Log(int.Parse(activeChild.name));
-            activeChild.SetParent(transform);
-            _playerInventory.Remove(requirement);
-            SolarSystemManager.ChangeSlot(Location);
-            SolarSystemManager.ChangeAnswer(Location, int.Parse(activeChild.name));
-            SolarSystemManager.CheckResult();
-            isOn= true;
-            animator.SetBool("isOn", true);
-        }
-        else
-        {
-            Debug.LogError("Filho não encontrado!");
-        }
+        
+        
     }
     
     void OnDisable()
     {
-
-        SolarSystemManager.ChangeSlot(Location);
-        SolarSystemManager.ChangeAnswer(Location, 0);
-        SolarSystemManager.CheckResult();
+        if(int.TryParse(gameObject.name, out Location))
+        {
+            SolarSystemManager.ChangeSlot(Location);
+            SolarSystemManager.ChangeAnswer(Location, -1);
+            SolarSystemManager.CheckResult();
+        }
     }
 }

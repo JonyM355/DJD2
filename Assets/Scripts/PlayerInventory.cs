@@ -51,7 +51,7 @@ public class PlayerInventory : MonoBehaviour
 
     private void SelectInventorySlot(int index)
     {
-
+        
         HideHandItem(_selectedSlotIndex);
         _selectedSlotIndex = index;
         ShowHandItem(_selectedSlotIndex);
@@ -79,6 +79,7 @@ public class PlayerInventory : MonoBehaviour
 
         if (child != null)
             child.gameObject.SetActive(true);
+        Debug.Log(slot);
     }
     public void HideHandAllItem()
     {
