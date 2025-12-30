@@ -19,4 +19,6 @@ MonoBehaviour:
   requirements: []
   requirementsMessage: 
   interactionMessages:
-  - Push
+  - Turn Off
+  - Turn On
+  MaxUses: 1

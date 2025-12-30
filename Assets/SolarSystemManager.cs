@@ -10,7 +10,7 @@ public class SolarSystemManager : MonoBehaviour
 
     private bool[] SlotManager = { false, false, false, false }; //false - Slot Free, True - Slot Occupied
     public GameObject Key;
-    public GameObject Earth;
+    public GameObject Mars;
     public GameObject Venus;
     public GameObject Uranus;
     public GameObject Jupiter;
@@ -72,7 +72,7 @@ public class SolarSystemManager : MonoBehaviour
     }
     public void DisableAllInteractive()
     {
-        DisableInteractiveOn(Earth);
+        DisableInteractiveOn(Mars);
         DisableInteractiveOn(Venus);
         DisableInteractiveOn(Uranus);
         DisableInteractiveOn(Jupiter);
