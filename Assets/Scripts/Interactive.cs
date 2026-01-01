@@ -1,6 +1,6 @@
- using System.Collections.Generic;
+using System.Collections.Generic;
 using UnityEngine;
-
+using System.Collections;
 public class Interactive : MonoBehaviour
 {
     [SerializeField] private InteractiveData _interactiveData;
@@ -209,12 +209,23 @@ public class Interactive : MonoBehaviour
 
         requirement.Uses++;
         if (requirement.Uses >= requirement.MaxUses)
-            _playerInventory.Remove(requirement);
+            StartCoroutine(RemoveAfterDelay(requirement));
+
 
         ++requirement._interactionCount;
 
         requirement.PlayAnimation(_interactionManager.interactAnimationName);
 
         CheckRequirements();
+    }
+
+    private IEnumerator RemoveAfterDelay(Interactive requirement)
+    {
+        yield return new WaitForSeconds(1f);
+
+        _playerInventory.Remove(requirement);
+
+        if (requirement != null && requirement.gameObject != null)
+            Destroy(requirement.gameObject);
     }
 }

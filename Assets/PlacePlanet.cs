@@ -20,6 +20,7 @@ public class PlacePlanet : MonoBehaviour
 
     void OnEnable()
     {
+        Location=-1;
         if(int.TryParse(gameObject.name, out Location))
         {
             Debug.Log(Location); // 123
@@ -28,18 +29,18 @@ public class PlacePlanet : MonoBehaviour
             {
                 Transform child = hand.GetChild(i);
 
-                if (child.gameObject.activeSelf)   // ou activeInHierarchy
+                if (child.gameObject.activeSelf )   // ou activeInHierarchy
                 {
-                    Debug.Log(child.gameObject);
+                    Debug.Log("nome " +gameObject.name);
                     activeChild = child;
                     break;
                 }
             }
-            Debug.Log("teste1");
+
             Interactive requirement = _playerInventory.GetSelected();
-            if (activeChild != null)
+            if (activeChild != null )
             {  
-                Debug.Log("teste");
+                
                 activeChild.position = transform.position;
                 //child.rotation = transform.rotation;
                 Debug.Log(int.Parse(activeChild.name));
