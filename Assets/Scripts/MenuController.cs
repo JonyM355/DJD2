@@ -87,6 +87,11 @@ public class MenuController : MonoBehaviour
         Debug.Log("Game closed");
     }
 
+    public void ShowCredits()
+    {
+        SceneManager.LoadScene("CreditsScene");
+    }
+
     public void SetVolume(float volume)
     {
         AudioListener.volume = volume;
