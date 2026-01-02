@@ -837,8 +837,8 @@ MonoBehaviour:
     by ULHT\n\r\n\n\n\n\n\n\n\n\n\n\r\nCopyrights \xA92026 Silent Orbit Games, All
     Rights Reserved.\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
-  m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fabbe24d58e5af841bf8f42db4de8a96, type: 2}
+  m_sharedMaterial: {fileID: -3654507096310613863, guid: fabbe24d58e5af841bf8f42db4de8a96, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

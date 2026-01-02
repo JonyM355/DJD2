@@ -5,6 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: e9549321d5033cd4c871637dc7539e7b
+  - enabled: 1
+    path: Assets/Scenes/CreditsScene.unity
+    guid: 243611324fbc837458a5d5c87baf14c6
+  - enabled: 1
+    path: Assets/Scenes/MainGame2.unity
+    guid: 2577062a9706d904f917644fed5144d7
   - enabled: 0
     path: "Assets/Scenes/Tomas_Real_N\xC3O_MEXER.unity"
     guid: 2857af4b1d1ec65478e7b2e096f1c40f
@@ -12,14 +21,8 @@ EditorBuildSettings:
     path: Assets/Scenes/MainGame.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 0
-    path: Assets/Scenes/MainMenu.unity
-    guid: e9549321d5033cd4c871637dc7539e7b
-  - enabled: 0
     path: Assets/Scenes/PrototypeGame.unity
     guid: 88cebacb792ea0f4682f65689d053548
-  - enabled: 1
-    path: Assets/Scenes/MainGame2.unity
-    guid: 2577062a9706d904f917644fed5144d7
   - enabled: 0
     path: Assets/Scenes/PrototypeGD3.unity
     guid: c99df2ce6b328b24a84ee31d32ae42f6
