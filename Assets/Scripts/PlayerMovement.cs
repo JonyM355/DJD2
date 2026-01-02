@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _jumpSpeed;
     [SerializeField] private float _maxLookUpAngle;
     [SerializeField] private float _maxLookDownAngle;
+    [SerializeField] private GameObject PauseMenuController;
 
     private CharacterController _controller;
     private Transform           _head;
@@ -27,9 +28,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        UpdateRotation();
-        UpdateHead();
-        CheckForJump();
+        if (PauseMenuController.gameObject.GetComponent<PauseMenuController>().isPaused == false)
+        {
+            UpdateRotation();
+            UpdateHead();
+            CheckForJump();
+        }
     }
 
     private void UpdateRotation()
