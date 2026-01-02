@@ -8,4 +8,9 @@ public class IntroductionController : MonoBehaviour
     {
         SceneManager.LoadScene("MainGame2");
     }
+
+    public void ReturnToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }
