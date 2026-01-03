@@ -8,6 +8,10 @@ public class TurnOffLights : MonoBehaviour
     public Material On;
     public Material Off;
     Renderer rend;
+    public AudioSource AudioSource;
+    public AudioClip LightsOn;
+    public AudioClip LightsOff;
+
     void Awake()
     {
         lights = FindObjectsByType<Light>(FindObjectsSortMode.None);
@@ -16,6 +20,7 @@ public class TurnOffLights : MonoBehaviour
     }
     public void TurnOffAllLights()
     {
+        AudioSource.PlayOneShot(LightsOff);
         foreach (Light light in lights)
             light.enabled = !light.enabled;
         if (!obj.activeSelf)
@@ -23,11 +28,13 @@ public class TurnOffLights : MonoBehaviour
             obj.SetActive(true);
             rend.material = Off;
         }
+        
         Debug.Log("Teste");
     }
 
     public void TurnOnAllLights()
     {
+        AudioSource.PlayOneShot(LightsOn);
         foreach (Light light in lights)
             light.enabled = !light.enabled;
         if (obj.activeSelf)

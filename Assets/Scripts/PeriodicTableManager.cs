@@ -5,6 +5,7 @@ public class PeriodicTableManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public int value;
     public Animator targetAnimator;
+    public BoxCollider boxCollider;
 
     void Start()
     {
@@ -21,7 +22,11 @@ public class PeriodicTableManager : MonoBehaviour
     {
         value++;
         if(value >= 3)
+        {
+            Debug.Log("Box True");
+            boxCollider.enabled = true;
             targetAnimator.SetTrigger("Open");
+        }
        
     }
     public void Reset()
