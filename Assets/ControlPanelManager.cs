@@ -77,6 +77,6 @@ public class ControlPanelManager : MonoBehaviour
             yield return null;
         }
 
-        SceneManager.LoadScene("MainMenu");   // <-- nome exato da cena
+        SceneManager.LoadScene("EndScene");   // <-- nome exato da cena
     }
 }
