@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ControlPanelManager : MonoBehaviour
 {
@@ -10,10 +11,11 @@ public class ControlPanelManager : MonoBehaviour
 
     bool canInput = true;
 
-    public AudioSource AudioSource;
-    public AudioClip ButtonPress;
-    public AudioClip RightAnswer;
+    //public AudioSource AudioSource;
+    //public AudioClip ButtonPress;
+    //public AudioClip RightAnswer;
 
+    public CanvasGroup fadePanel;   // <-- arrasta o FadePanel aqui no Inspector
 
     void Start()
     {
@@ -23,8 +25,8 @@ public class ControlPanelManager : MonoBehaviour
     public void ChangeAnswer(string value)
     {
         if (!canInput)
-            return;   // BLOQUEIA a introdução enquanto espera
-        //AudioSource.PlayOneShot(ButtonPress);
+            return;
+
         UserAnswer += value;
         label.text = UserAnswer;
 
@@ -38,13 +40,11 @@ public class ControlPanelManager : MonoBehaviour
             if (UserAnswer == Solution)
             {
                 label.color = Color.green;
-                //AudioSource.PlayOneShot(RightAnswer);
+                StartCoroutine(WinSequence());
             }
             else
             {
                 label.color = Color.red;
-
-                // espera 1 segundo e desbloqueia
                 StartCoroutine(ResetAfterDelay());
             }
         }
@@ -52,13 +52,31 @@ public class ControlPanelManager : MonoBehaviour
 
     System.Collections.IEnumerator ResetAfterDelay()
     {
-        canInput = false;      // bloqueia
+        canInput = false;
         yield return new WaitForSeconds(1f);
 
         UserAnswer = "";
         label.text = "";
         label.color = Color.white;
 
-        canInput = true;       // desbloqueia
+        canInput = true;
+    }
+
+    System.Collections.IEnumerator WinSequence()
+    {
+        canInput = false;
+
+        yield return new WaitForSeconds(1f); // espera antes do fade
+
+        // Fade out
+        float t = 0f;
+        while (t < 2f)
+        {
+            t += Time.deltaTime;
+            fadePanel.alpha = t;
+            yield return null;
+        }
+
+        SceneManager.LoadScene("MainMenu");   // <-- nome exato da cena
     }
 }
