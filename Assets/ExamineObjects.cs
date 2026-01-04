@@ -10,7 +10,7 @@ public class ExamineObjects : MonoBehaviour
     private Vector3 LastMousePosition;
     private bool lastState;
     private Transform ExaminedObject;
-
+    public Vector3 customOffset;
     private Dictionary<Transform, Vector3> OriginalPosition = new Dictionary<Transform, Vector3>();
     private Dictionary<Transform, Quaternion> OriginalRotation = new Dictionary<Transform, Quaternion>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -95,18 +95,20 @@ public class ExamineObjects : MonoBehaviour
         Debug.Log(OriginalRotation[ExaminedObject]);
     }
 
+    
+
     void Examine()
     {
         if (ExaminedObject != null)
         {
-            ExaminedObject.position = Vector3.Lerp(ExaminedObject.position, offset.transform.position, 0.2f);
+            Vector3 targetPos = offset.transform.position + customOffset;
+            ExaminedObject.position = Vector3.Lerp(ExaminedObject.position, targetPos, 0.2f);
 
             Vector3 DeltaMouse = Input.mousePosition - LastMousePosition;
             float RotationSpeed = 1.0f;
             ExaminedObject.Rotate(DeltaMouse.x * RotationSpeed * Vector3.up, Space.Self);
             ExaminedObject.Rotate(DeltaMouse.y * RotationSpeed * Vector3.left, Space.Self);
             LastMousePosition = Input.mousePosition;
-
         }
     }
     void NonExamine()

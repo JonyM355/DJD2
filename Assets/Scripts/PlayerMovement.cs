@@ -26,15 +26,7 @@ public class PlayerMovement : MonoBehaviour
         _head       = GetComponentInChildren<Camera>().transform;
     }
 
-    void Update()
-    {
-        if (PauseMenuController.gameObject.GetComponent<PauseMenuController>().isPaused == false)
-        {
-            UpdateRotation();
-            UpdateHead();
-            CheckForJump();
-        }
-    }
+
 
     private void UpdateRotation()
     {
@@ -68,6 +60,12 @@ public class PlayerMovement : MonoBehaviour
         UpdateVelocityHor();
         UpdateVelocityVer();
         UpdatePosition();
+        if (PauseMenuController.gameObject.GetComponent<PauseMenuController>().isPaused == false)
+        {
+            UpdateRotation();
+            UpdateHead();
+            CheckForJump();
+        }
     }
 
     private void UpdateVelocityHor()
