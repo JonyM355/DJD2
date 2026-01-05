@@ -65479,7 +65479,6 @@ GameObject:
   - component: {fileID: 8196935123993192442}
   - component: {fileID: 6091716022811422769}
   - component: {fileID: 8196935123993192443}
-  - component: {fileID: 8196935123993192444}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -66164,19 +66163,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnOffLights: {fileID: 84675188}
---- !u!114 &8196935123993192444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7799461428385182447}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d92ed8119693bd14dbe1f31a02235b5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  alvo: {fileID: 0}
 --- !u!33 &8202116737511989110
 MeshFilter:
   m_ObjectHideFlags: 0

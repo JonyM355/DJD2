@@ -57,25 +57,20 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        UpdateRotation();
+        UpdateHead();
+        CheckForJump();
+        
         UpdateVelocityHor();
         UpdateVelocityVer();
         UpdatePosition();
-        if (PauseMenuController.gameObject.GetComponent<PauseMenuController>().isPaused == false)
-        {
-            UpdateRotation();
-            UpdateHead();
-            CheckForJump();
-        }
+        
+        
+        
     }
     void Update()
     {
 
-        if (PauseMenuController.gameObject.GetComponent<PauseMenuController>().isPaused == false)
-        {
-            UpdateRotation();
-            UpdateHead();
-            CheckForJump();
-        }
     }
 
     private void UpdateVelocityHor()
