@@ -17,7 +17,7 @@ MonoBehaviour:
   inventoryName: Key
   inventoryIcon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   requirements:
-  - {fileID: 11400000, guid: f4af17d118717ff4586f83b59e178ae0, type: 2}
+  - {fileID: 11400000, guid: 5bafc5b5064243d42922935efdd1a838, type: 2}
   requirementsMessage: Need key
   interactionMessages:
   - Open

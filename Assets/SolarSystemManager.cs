@@ -63,8 +63,8 @@ public class SolarSystemManager : MonoBehaviour
             Debug.Log("Answer Right");
             animator.SetTrigger("OpenLamp");
             DisableAllInteractive();
-            Renderer rend = Key.GetComponent<Renderer>();
-            rend.enabled = true;
+            BoxCollider box = Key.GetComponent<BoxCollider>();
+            box.enabled = true; 
             
         }
         else
