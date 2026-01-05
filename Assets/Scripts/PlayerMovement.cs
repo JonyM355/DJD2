@@ -67,6 +67,16 @@ public class PlayerMovement : MonoBehaviour
             CheckForJump();
         }
     }
+    void Update()
+    {
+
+        if (PauseMenuController.gameObject.GetComponent<PauseMenuController>().isPaused == false)
+        {
+            UpdateRotation();
+            UpdateHead();
+            CheckForJump();
+        }
+    }
 
     private void UpdateVelocityHor()
     {
