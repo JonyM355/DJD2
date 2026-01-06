@@ -15,7 +15,7 @@ MonoBehaviour:
   type: 0
   startsOn: 1
   inventoryName: Mars
-  inventoryIcon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  inventoryIcon: {fileID: -1599882025, guid: 17ce717e2992adf46a544eff5fed8f23, type: 3}
   requirements: []
   requirementsMessage: 
   interactionMessages:

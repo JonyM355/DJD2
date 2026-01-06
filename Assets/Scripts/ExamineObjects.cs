@@ -10,54 +10,58 @@ public class ExamineObjects : MonoBehaviour
     private Vector3 LastMousePosition;
     private bool lastState;
     private Transform ExaminedObject;
+    private Collider MyCollider;
     public Vector3 customOffset;
     private Dictionary<Transform, Vector3> OriginalPosition = new Dictionary<Transform, Vector3>();
     private Dictionary<Transform, Quaternion> OriginalRotation = new Dictionary<Transform, Quaternion>();
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Start()
     {
-
+        MyCollider = GetComponent<Collider>();
     }
 
-    // Update is called once per frame
+
     void Update()
     {
+      
+        if (IsExamining && Input.anyKeyDown)
+            IsExamining = false;
 
-        if (IsExamining)
+      
+        if (IsExamining && !lastState)
         {
-
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider == gameObject.GetComponent<Collider>())
+                if (hit.collider == GetComponent<Collider>())
                 {
-                    Examine();
-                    if (IsExamining!=lastState)
-                    {
-                        ExaminedObject = hit.transform;
-
-                        
-                        StartExamination();
-                    }
-                    else
-                    {
-
-                    }
+                    ExaminedObject = hit.transform;
+                    StartExamination();
                 }
             }
         }
+
+   
         if (IsExamining)
         {
             Examine();
-            StartExamination();
         }
-        else if(IsExamining!=lastState)
+
+
+        if (!IsExamining && lastState)
         {
-            NonExamine();
             StopExamination();
         }
+
+        
+        if (!IsExamining && ExaminedObject != null)
+        {
+            NonExamine();
+        }
+
+        lastState = IsExamining;
     }
     public void ExamineInteractive()
     {
@@ -69,7 +73,8 @@ public class ExamineObjects : MonoBehaviour
         IsExamining = !IsExamining;
     }
     void StartExamination()
-    {
+    {   
+
         Debug.Log(ExaminedObject.rotation);
         if (ExaminedObject != null)
         {
@@ -79,6 +84,8 @@ public class ExamineObjects : MonoBehaviour
                 OriginalRotation[ExaminedObject] = ExaminedObject.localRotation;
             }
         }
+        if (MyCollider != null)
+            MyCollider.enabled = false;
         lastState = IsExamining;
         LastMousePosition = Input.mousePosition;
         Cursor.lockState = CursorLockMode.None;
@@ -105,7 +112,7 @@ public class ExamineObjects : MonoBehaviour
             ExaminedObject.position = Vector3.Lerp(ExaminedObject.position, targetPos, 0.2f);
 
             Vector3 DeltaMouse = Input.mousePosition - LastMousePosition;
-            float RotationSpeed = 1.0f;
+            float RotationSpeed = 0.2f;
             ExaminedObject.Rotate(DeltaMouse.x * RotationSpeed * Vector3.up, Space.Self);
             ExaminedObject.Rotate(DeltaMouse.y * RotationSpeed * Vector3.left, Space.Self);
             LastMousePosition = Input.mousePosition;
@@ -123,6 +130,8 @@ public class ExamineObjects : MonoBehaviour
             {
                 ExaminedObject.rotation = Quaternion.Slerp(ExaminedObject.rotation, OriginalRotation[ExaminedObject], 0.2f);
             }
+            if (MyCollider != null)
+                MyCollider.enabled = true;
         }
     }
 }

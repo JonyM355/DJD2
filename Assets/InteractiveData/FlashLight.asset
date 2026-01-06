@@ -15,7 +15,7 @@ MonoBehaviour:
   type: 0
   startsOn: 1
   inventoryName: FlashLight
-  inventoryIcon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  inventoryIcon: {fileID: 1839340581, guid: ee025a3cc6b64854e93eee2b34f0370e, type: 3}
   requirements: []
   requirementsMessage: 
   interactionMessages: []

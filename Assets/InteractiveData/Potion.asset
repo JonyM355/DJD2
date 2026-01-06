@@ -15,7 +15,7 @@ MonoBehaviour:
   type: 0
   startsOn: 1
   inventoryName: potion
-  inventoryIcon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  inventoryIcon: {fileID: -270243324, guid: 30a8451c5f2ac02498dfec0bc58ce051, type: 3}
   requirements: []
   requirementsMessage: 
   interactionMessages: []
