@@ -12,7 +12,7 @@ public class CreditsScroll : MonoBehaviour
     [Header("Fade")]
     public CanvasGroup fadeCanvas;
     public float fadeDuration = 1.5f;
-    public float fadeExtraDistance = 200f; // quanto passa depois do último texto
+    public float fadeExtraDistance = 200f; // quanto passa depois do ï¿½ltimo texto
 
     RectTransform canvasRect;
     bool fading = false;
@@ -21,7 +21,7 @@ public class CreditsScroll : MonoBehaviour
     {
         canvasRect = creditsContainer.GetComponentInParent<Canvas>().GetComponent<RectTransform>();
 
-        // Força cálculo correto do layout
+        // Forï¿½a cï¿½lculo correto do layout
         Canvas.ForceUpdateCanvases();
         LayoutRebuilder.ForceRebuildLayoutImmediate(creditsContainer);
 
@@ -35,14 +35,14 @@ public class CreditsScroll : MonoBehaviour
 
         creditsContainer.anchoredPosition += Vector2.up * scrollSpeed * Time.deltaTime;
 
-        // Posição do fundo do container
+        // Posiï¿½ï¿½o do fundo do container
         float creditsBottom =
             creditsContainer.anchoredPosition.y - creditsContainer.rect.height;
 
-        // Topo visível do canvas
-        float canvasTop = canvasRect.rect.height / 2f;
+        // Topo visï¿½vel do canvas
+        float canvasTop = canvasRect.rect.height+(canvasRect.rect.height/3);
 
-        // Começa fade quando o conteúdo já saiu mesmo do ecrã
+        // Comeï¿½a fade quando o conteï¿½do jï¿½ saiu mesmo do ecrï¿½
         if (creditsBottom > canvasTop + fadeExtraDistance)
         {
             StartCoroutine(FadeAndExit());
