@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _jumpSpeed;
     [SerializeField] private float _maxLookUpAngle;
     [SerializeField] private float _maxLookDownAngle;
-    [SerializeField] private GameObject PauseMenuController;
+    [SerializeField] private PauseMenuController PauseMenuController;
 
     private CharacterController _controller;
     private Transform           _head;
@@ -57,20 +57,23 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        UpdateRotation();
-        UpdateHead();
-        CheckForJump();
+        if(!PauseMenuController.isPaused)
+        {
+            UpdateRotation();
+            UpdateHead();
         
-        UpdateVelocityHor();
-        UpdateVelocityVer();
-        UpdatePosition();
+        
+            UpdateVelocityHor();
+            UpdateVelocityVer();
+            UpdatePosition();
+        }
         
         
         
     }
     void Update()
     {
-
+        CheckForJump();
     }
 
     private void UpdateVelocityHor()
